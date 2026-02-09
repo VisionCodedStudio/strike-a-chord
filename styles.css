@@ -24,12 +24,22 @@ header {
 /* Navigation */
 nav {
   background-color: #444;
-  color: white;
   text-align: center;
   padding: 10px;
 }
 
-/* Main content (ID selector — REQUIRED) */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content (ID selector required for Week 4) */
 #content {
   max-width: 800px;
   margin: 20px auto;
