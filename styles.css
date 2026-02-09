@@ -1,7 +1,7 @@
 /* Week 4 – Chapter 4 CSS */
 
 /* Reset */
-body, header, nav, main, footer, ul {
+body, header, nav, main, footer, p, h1, h2 {
   margin: 0;
   padding: 0;
 }
@@ -9,12 +9,14 @@ body, header, nav, main, footer, ul {
 /* Body */
 body {
   font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Header */
 header {
   background-color: #222;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 20px;
 }
@@ -22,46 +24,34 @@ header {
 /* Navigation */
 nav {
   background-color: #444;
-}
-
-nav ul {
-  list-style: none;
+  color: white;
   text-align: center;
+  padding: 10px;
 }
 
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  color: #fff;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Main */
-main {
-  max-width: 900px;
-  margin: 20px auto;
-}
-
-/* Content box (box model) */
+/* Main content (ID selector — REQUIRED) */
 #content {
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
   border: 2px solid #ccc;
 }
 
-/* Responsive image */
-.hero-image {
-  max-width: 100%;
-  height: auto;
+/* Headings */
+h2 {
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
 
 /* Footer */
 footer {
   background-color: #222;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
